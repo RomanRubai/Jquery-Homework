@@ -4,5 +4,7 @@
 безпосередньо над відповідним елементом `<h3>`.
  */
 $(document).ready(function () {
-  // ваш код
+  $("h3+div").each(function(i, el) {
+    $(el).insertBefore($(el).prev("h3"));
+  })
 });
